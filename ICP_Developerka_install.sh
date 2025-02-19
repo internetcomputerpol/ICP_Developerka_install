@@ -39,7 +39,7 @@ echo "🔄 Rozpoczynam instalację środowiska na Ubuntu..."
 execute_step "Instalacja curl" "sudo apt update && sudo apt install -y curl"
 
 # Uruchomienie skryptu jako zwykły użytkownik
-exec sudo -u $(logname) bash -c '
+sudo -u $(logname) bash << 'EOF'
 
 TOTAL_STEPS=10
 CURRENT_STEP=1
@@ -94,18 +94,17 @@ execute_step "Konfiguracja PATH dla dfx" "
     source \"$HOME/.local/share/dfx/env\"
 "
 
-# Instalacja Visual Studio Code z sudo
 execute_step "Instalacja Visual Studio Code" "
-    sudo wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg &&
+    wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg &&
     sudo install -D -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/packages.microsoft.gpg &&
     sudo sh -c 'echo \"deb [arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main\" > /etc/apt/sources.list.d/vscode.list' &&
-    sudo rm -f packages.microsoft.gpg &&
+    rm -f packages.microsoft.gpg &&
     sudo apt update &&
     sudo apt install -y code
 "
 
 execute_step "Aktywacja środowiska" "
-    sudo -u $(logname) bash -c 'source $HOME/.bashrc && source $HOME/.profile'
+    source $HOME/.bashrc && source $HOME/.profile
 "
 
 echo -e "\n✅ Instalacja zakończona pomyślnie!"
@@ -116,4 +115,5 @@ echo "  - npm"
 echo "  - DFINITY SDK (dfx)"
 echo "  - Visual Studio Code"
 echo -e "\nŚrodowisko developerskie jest gotowe do użycia!"
-'
+
+EOF
