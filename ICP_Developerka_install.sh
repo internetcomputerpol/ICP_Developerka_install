@@ -31,7 +31,7 @@ echo "🔄 Rozpoczynam instalację środowiska na Ubuntu..."
 
 execute_step "Aktualizacja listy pakietów" "sudo apt update"
 execute_step "Instalacja curl" "sudo apt install -y curl"
-sudo apt install curl
+
 
 execute_step "Instalacja NVM (Node Version Manager)" "
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash &&
