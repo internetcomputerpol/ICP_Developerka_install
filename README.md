@@ -1,4 +1,6 @@
 ![TokenIC](DFXQuickScript.png)
+----------------------------------
+
 Skrypt do szybkiej konfiguracji środowiska Developerskiego dla ICP na Ubuntu 
 
 --------------------
