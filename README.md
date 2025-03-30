@@ -1,4 +1,4 @@
-# ICP_Developerka_install
+![TokenIC](DFXQuickScript.png)
 Skrypt do szybkiej konfiguracji środowiska Developerskiego dla ICP na Ubuntu 
 
 --------------------
