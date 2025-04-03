@@ -17,8 +17,22 @@ jeżeli znajdujecie się w tym samym katalogu w jakim jest skrypt|
 Dodatkowo: 
 
 Polecam doinstalować sobie w Extensions w VSCode
-![Extension](0.png)
+1. Macie to tutaj po odpaleniu VS Code
+![ExtMotoko](0.png)
 
+2. Pakiet rozpoznawania składni Motoko od Dfinity
+![ExtVue](1.png)
+
+3. Pakiet dla Vue.js
+![ExtVue](2.png)
+
+4. Pakiet dla Material Icon ( Najs ikonki dla plików js,html, json )
+
+![ExtVue](3.png)
+
+-------------------
+
+Jeżeli potrzeba wam więcej info odnośnie instalacji to tutaj wrzucam filmik na YT:
 
 Tutorial na YouTube instalacji dfx za pomocą skryptu:
 
