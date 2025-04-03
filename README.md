@@ -16,11 +16,11 @@ jeżeli znajdujecie się w tym samym katalogu w jakim jest skrypt|
 
 Dodatkowo: 
 
-Polecam doinstalować sobie w Extensions w VSCode
+Polecam doinstalować odpowiednie rozszerzenia (Extensions) w VSCode
 1. Macie to tutaj po odpaleniu VS Code
 ![ExtMotoko](0.png)
 
-2. Pakiet rozpoznawania składni Motoko od Dfinity
+2. Pakiet do rozpoznawania składni języka Motoko opracowany przez Dfinity
 ![ExtVue](1.png)
 
 3. Pakiet dla Vue.js
