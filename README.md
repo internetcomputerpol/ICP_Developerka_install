@@ -12,7 +12,19 @@ Uruchamiamy to jako zwykły User z poziomu Terminala
 jeżeli znajdujecie się w tym samym katalogu w jakim jest skrypt| 
 
 
+
 > bash ./ICP_Developerka_install.sh
+
+🟡 Przed instalacją updatów skrypt może poprosić o podanie hasła root 
+   w dalszej części skrypt dodaje do lokalnych zmiennych systemowych 
+   ścieżki właściwe dla konta lokalnego w przypadku błędu dodawania 
+   do zmiennych środowiskowych po prostu
+
+   uruchom jeszcze raz skrypt ( on sobie sprawdzi aha zrobiłem update 
+   i nie poprosi o hasło = będziesz go uruchamiał jako user ) 
+   
+
+
 
 Dodatkowo: 
 
